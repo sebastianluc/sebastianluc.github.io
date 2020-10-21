@@ -1,0 +1,271 @@
+#umie {
+	grid-column: 1/3;
+	grid-row: 1/2;
+	width: 95vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#umie h2 {
+	padding-bottom: 0.5rem;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	margin: 0.4rem;
+	padding-left: 0.8rem;
+	border-bottom: 1px solid black;
+}
+
+#umie h5 {
+	margin-left: 8.5rem;
+	text-align: justify;
+	margin-bottom: 1.5rem;
+	border-bottom: 1px dotted black;
+}
+
+#umie .fa {
+	font-size: 40px;
+}
+
+#skile {
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+#skile .okienko {
+	display: inline-block;
+	width: 48%;
+	margin-top: 0.8rem;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+	background-color: rgba(217, 56, 56, 0);
+	border-radius: 50%;
+}
+
+#skile .okienko:hover {
+	background-color: rgba(217, 56, 56, 0.88);
+	border-radius: 0.5rem;
+}
+
+.okienko figcaption {
+	font-size: 20px;
+	color: snow;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+#skile .okienko:hover figcaption {
+	color: black;
+}
+
+.okienko .devicon-cplusplus-plain {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-cplusplus-plain:hover {
+	color: snow;
+}
+
+.okienko .devicon-css3-plain {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-css3-plain:hover {
+	color: snow;
+}
+
+.okienko .devicon-html5-plain {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-html5-plain:hover {
+	color: snow;
+}
+
+.okienko .devicon-javascript-plain {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-javascript-plain:hover {
+	color: snow;
+}
+
+.okienko .devicon-jquery-plain {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-jquery-plain:hover {
+	color: snow;
+}
+
+.okienko .devicon-mysql-plain {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-mysql-plain:hover {
+	color: snow;
+}
+
+.okienko .devicon-photoshop-plain {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-photoshop-plain:hover {
+	color: snow;
+}
+
+
+.okienko .devicon-php-plain {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-php-plain:hover {
+	color: snow;
+}
+
+.okienko .devicon-visualstudio-plain {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-visualstudio-plain:hover {
+	color: snow;
+}
+
+.okienko .devicon-c-line {
+	font-size: 145px;
+	text-align: center;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.okienko .devicon-c-line:hover {
+	color: snow;
+}
+
+/* ============ Responsywnosc ===== */
+@media all and (max-device-width: 410px) {
+
+	#umie h5 {
+		margin-left: 6.5rem;
+		font-size: 10px !important;
+	}
+
+	.okienko {
+		width: 30%;
+		margin-top: 1rem;
+	}
+
+	.okienko figcaption {
+		font-size: 14px !important;
+	}
+
+	[class *="devicon-"] {
+		font-size: 80px !important;
+	}
+}
+
+@media all and (min-width: 800px) and (max-width:1199px) {
+
+	#skile .okienko {
+		width: 25%;
+	}
+
+	#umie h5 {
+		width: 81.2%;
+	}
+
+	.okienko figcaption {
+		font-size: 14px !important;
+	}
+
+	[class *="devicon-"] {
+		font-size: 80px !important;
+	}
+}
+
+@media all and (min-width: 1200px) and (max-width: 1599px) {
+
+	#umie {
+		width: 60vw;
+	}
+
+	#skile {
+		width: 60vw;
+		margin-top: 2rem;
+	}
+
+
+	#skile .okienko {
+		width: 24%;
+	}
+
+	#umie h5 {
+		width: 80%;
+	}
+
+	.okienko figcaption {
+		font-size: 14px !important;
+	}
+
+	[class *="devicon-"] {
+		font-size: 110px !important;
+	}
+}
+
+
+@media all and (min-width: 1600px) {
+
+	#umie {
+		width: 50vw;
+	}
+
+	#skile {
+		width: 45vw;
+		margin-top: 2rem;
+	}
+
+	#skile .okienko {
+		width: 24%;
+	}
+
+	#umie h5 {
+		width: 83%;
+	}
+
+	.okienko figcaption {
+		font-size: 14px !important;
+	}
+
+	[class *="devicon-"] {
+		font-size: 120px !important;
+	}
+}

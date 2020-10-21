@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Opis strony -->
+	<meta name="description" content="Sebastian Luc website, 
+	Projects C++, Projects Neural Network with feed forward in C++ and 
+	CUDA C C++,  Neural Network Backpropagation, activation function 
+	maxout or sigmoid in project, Maxout, sigmoid">
+
+	<!-- Favivon icon -->
+	<link rel="icon" href="./favicon.ico"/>
+	<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png">
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+
+	<!-- Tytuł -->
+	<title>N&N Sebastian Łuc</title>">
+
+	<link rel="stylesheet" type="text/css" href="style/css/main.css">
+	<!--Rodzaj czcionek -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merienda:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+	<!-- Dąłaczam pliki fontello -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+	<!-- Dla fontello z językami -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="jquery.scrollTo.min.js"></script>
+
+	<script>
+		/* kiedy kólko kreci sie w dol to strona idzie do gory i na odwrot */
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			var bt = document.getElementById('idz');
+			var k = document.getElementById('lista');
+
+		  if (prevScrollpos > currentScrollPos) {
+			  document.getElementById("menu").style.top = "1rem";
+			  bt.style.display = "none"
+		  } else {
+			document.getElementById("menu").style.top = "-4rem";
+			  k.style.display = "none";
+			  bt.style.display = "block";
+		  }
+		  prevScrollpos = currentScrollPos;
+}	
+</script>
+
+</head>
+
+<body>
+	<a href="#" id="idz">
+		<i class="fa">&#xf106;</i>
+	</a>
+
+	<nav>
+		<div id="menu">
+			<div id="okno">
+				<i class="fa">&#xf0c9;</i>
+			</div>
+			<div id="napis">
+				<hgroup id="napis">
+					<h3>
+						Work presentation website.
+					</h3>
+					<h6>
+						2018 &copy; Sebastian Łuc
+					</h6>
+				</hgroup>
+			</div>
+		</div>
+	</nav>
+
+	<div id="lista" style="display: none;">
+		<ul>
+			<li><a id="skil" href="#"><i class="fa">&#xf201;</i> Skills</a></li>
+			<li id="listaUnActiv"><i class="fa">&#xf02d;</i>Project
+				<div id="listaActive" style="display: none;">
+					<ul>
+						<li><a id="curent" href="#">
+								Current
+							</a>
+						</li>
+						<li><a id="fin" href="#">
+								Finished
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li><a id="kno" href="#"><i class="fa">&#xf19d;</i> Knowledg</a></li>
+			<li><a id="con" href="#"><i class="fa">&#xf0e0;</i> Contact</a></li>
+			<li><a id="blog" href="http://datascience.sebastianluc.com/"><i class="fab" style="margin-right: 0.5rem;">&#xf1a9;</i> Blog</a></li>
+		</ul>
+	</div>
+
+	<header>
+		<div id="obrazek">
+			<img src="style/obrazki/portret22x.png" alt="obrazek" class="obrazek" />
+		</div>
+
+		<div id="logo">
+			<img src="style/logo/logo3.png" alt="logo" class="logo">
+		</div>
+
+		<div class="tlo">
+		</div>
+	</header>
+
+	<main>
+		<section id="umie">
+			<hgroup>
+				<h2 id="skilTo">
+					<i class="fa">&#xf121;</i> <span style="margin-left: 0.8rem; margin-bottom: 0.7rem;">skills:</span </h2> <h5>
+					Programming languages, and technology what i using.
+					</h5>
+			</hgroup>
+
+			<div id="skile">
+				<div class="okienko">
+					<i class="devicon-cplusplus-plain"></i>
+					<figcaption>C++</figcaption>
+				</div>
+				<div class="okienko">
+					<i class="devicon-c-line"></i>
+					<figcaption>C</figcaption>
+				</div>
+				<div class="okienko">
+					<i class="devicon-html5-plain"></i>
+					<figcaption>HTML5</figcaption>
+				</div>
+				<div class="okienko">
+					<i class="devicon-javascript-plain"></i>
+					<figcaption>JavaScript</figcaption>
+				</div>
+				<div class="okienko">
+					<i class="devicon-jquery-plain"></i>
+					<figcaption>JQuery</figcaption>
+				</div>
+				<div class="okienko">
+					<i class="devicon-mysql-plain"></i>
+					<figcaption>MySql</figcaption>
+				</div>
+				<div class="okienko">
+					<i class="devicon-photoshop-plain"></i>
+					<figcaption>Photoshop 2018</figcaption>
+				</div>
+				<div class="okienko">
+					<i class="devicon-php-plain"></i>
+					<figcaption>PHP</figcaption>
+				</div>
+				<div class="okienko">
+					<i class="devicon-visualstudio-plain"></i>
+					<figcaption>Visual Studio 2017</figcaption>
+				</div>
+				<div class="okienko">
+					<i class="devicon-css3-plain"></i>
+					<figcaption>CSS / CSS Grid</figcaption>
+				</div>
+			</div>
+		</section>
+		<section id="projekty">
+			<hgroup>
+				<h3>
+					<a href="https://github.com/Apogeum12"><i class="fab" style="font-size: 60px; margin-bottom: 1rem;box-shadow: 0 0 0 0;">&#xf09b;</i></a>
+					<span style="margin-left: 0.9rem; margin-top: -2rem;">All my projects, available on the Github.</span </h3> <h4>
+					</h4>
+					<h2 id="curentTo">
+						<span style="font-size: 24px; border-bottom: 1px dashed black; width:4rem;">Current</span>
+						</br></br>
+						<span style="margin-top: 1rem;">
+							Actually I working on the RNN Neural network with FeedForward in c++ and CUDA C/C++ for GPU version. I planning buliding Network with back propagation, In the future I want bulid LSTM network and I planning buliding translator in Eng->Pol; Pol->Eng </span>
+					</h2>
+
+					<h2 id="finTo">
+						<span style="font-size: 24px; border-bottom: 1px dashed black; width:4rem;">Finished</span>
+						</br></br>
+						<span style="margin-top: 1rem;">
+							I finished FeedForward Neural Network with maxout search Activation function, and sigmoid activation function neural network. I made correct code in project decoding from bitmap image to datebase csv in three separe base for RGB colors, for Red, Green and Blue . </span>
+					</h2>
+			</hgroup>
+			</br></br>
+			<div id="przejscie">
+				<a href="http://datascience.sebastianluc.com/">
+					<div id="szcze">
+						More inf.
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<section id="wiedza">
+			<hgroup>
+				<h3 id="knoTo">
+					<i class="fa" style="font-size: 60px; margin-bottom: 1rem;box-shadow: 0 0 0 0;">&#xf19d;</i>
+					<span style="margin-left: 0.8rem; ">Education:</span>
+				</h3>
+				<h2>
+					<span style="font-size: 22px !important;">About Me</span>
+					</br></br>
+					<span style="margin-top: 1rem;">
+						In 2014 started study theoretical physic
+						on Jagelonian University. Some course what I finished, is Advanced course Linear Algebra Geometric, Mathematical analyze all 3 part Advanced courses. theoretical Mechanics, 2 with 2 part first level laboratory physics and Electronic Laboratory. I finished first level exercises with Advanced Quantum Mechanics and Laboratory with C / C++ programing. </span>
+				</h2>
+				</br></br>
+				<h2>
+					<span style="font-size: 22px;">Programing</span>
+					</br></br>
+					<span style="margin-top: 1rem;">
+						In 2016 after courses C/C++ i started interesing programing, but after cours with Algebry and some information from network(November 2017) I started interesting in Neural Networks and Artificial Intelligence. And I started reading articles about this. since this I buliding sigmoid neural network and others who I adding to github in close future. </span>
+				</h2>
+			</hgroup>
+			</br></br>
+		</section>
+		<section id="wiadomosc">
+			<hgroup>
+				<h2 id="conTo">
+					<i class="fab" style="font-size: 60px; margin-left: 1rem;color: rgba(26, 255, 7, 0.7);"> &#xf299; </i> <span style="margin-left: 1.2rem;"> Contact... </span>
+				</h2>
+				<h5 style="text-align: right;">
+					Send the Message or Visit my profile on facebook etc.
+				</h5>
+			</hgroup>
+
+			<div id="profile">
+				<div id="face">
+					<a href="https://www.facebook.com/euukalipptus"><i class="fab" style="font-size: 60px;">&#xf082;</i></a></div>
+
+				<div id="link"><a href="https://www.linkedin.com/in/sebastian-łuc-8b8b60165"><i class="fab" style="font-size: 60px;">&#xf0e1;</i></a></div>
+
+				<div id="yt"><a href="https://www.youtube.com/channel/UCviLqlBz76-6UllUJsjAAzg"><i class="fab" style="font-size: 60px;">&#xf167;</i></a></div>
+			</div>
+			<div id="info">
+				<form action="mail.php" method="post" enctype="text">
+					<textarea id="mess" name="message" placeholder="Write message to me..." required></textarea>
+
+					<input type="fname" name="fname" placeholder="Your Name..." required>
+					<input type="submit" id="submit" name="submit" value="Send">
+					<input type="email" id="email" name="email" placeholder="Your email" required>
+
+					<button type="reset" name="reset">Reset</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<hgroup>
+			<h3>All Rights Reserved</h3>
+			<h4>2018 &copy; Sebastian Łuc</h4>
+		</hgroup>
+	</footer>
+	<script src="style/kod.js">
+
+	</script>
+</body>
+
+</html>

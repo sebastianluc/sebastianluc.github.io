@@ -1,0 +1,103 @@
+@import "animate.css";
+@import "header.css";
+@import "cialo.css";
+@import "project.css";
+@import "wiedza.css";
+@import "wiadomosc.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Głowne dane całych bloków */
+html {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	margin: 0;
+	display: grid;
+	width: 100vw;
+	grid-template-columns: 100vw;
+	grid-template-rows: 100vh auto auto;
+	grid-template-areas: "glowa""cialo""stopka";
+	overflow-x: hidden;
+	font-size: 14px;
+	z-index: 0;
+}
+
+/* Opisy głównych bloków */
+header {
+	grid-row: 1/2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: grid;
+	grid-template-columns: 100vw;
+	grid-template-rows: 6vh auto auto;
+	grid-template-areas: "menu""obrazek""logo";
+
+	background: linear-gradient(-55deg, rgba(80, 22, 93, 0.92), rgba(144, 50, 147, 0.61), rgba(46, 80, 201, 0.86), rgba(58, 164, 229, 0.76));
+	background-size: 250% 150%;
+
+	-webkit-animation: AnimationName 16s ease infinite;
+	animation: AnimationName 16s ease infinite;
+
+}
+
+main {
+	grid-row: 2/3;
+	width: 100vw;
+	position: relative;
+	z-index: 1;
+	margin-top: 5vh;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto 5vh;
+	grid-row-gap: 3rem;
+
+	background: linear-gradient(-5deg, rgba(80, 22, 93, 0.92), rgba(144, 50, 147, 0.61), rgba(46, 80, 201, 0.86), rgba(58, 164, 229, 0.76));
+	background-size: 100% 100%;
+}
+
+footer {
+	grid-row: 3/4;
+	position: relative;
+	width: 100vw;
+	height: 25vh;
+	z-index: 9;
+	color: snow;
+	background: rgba(92, 39, 191, 0.2);
+
+	-webkit-box-shadow: -2px -7px 29px 2px rgba(56, 25, 56, 0.89);
+	box-shadow: -2px -7px 39px 5px rgba(166, 138, 230, 0.5);
+	margin-top: 0.25rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer hgroup {
+	margin-top: 17vh;
+}
+
+footer hgroup h3 {
+	margin-left: 6rem;
+	font-size: 24px;
+}
+
+footer hgroup h4 {
+	margin-left: 16rem;
+}

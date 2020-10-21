@@ -1,0 +1,522 @@
+/* Rozszerzenie głównych elementów */
+#menu {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	width: 80%;
+	height: 2.4rem;
+	position: fixed;
+	top: 1rem;
+	right: 0;
+	z-index: 3;
+	background: linear-gradient(to bottom left, rgba(119, 50, 162, 0.99), rgba(74, 42, 180, 0.87), rgba(73, 104, 211, 0.85));
+	border-radius: 1rem 0 0 1rem;
+	transition: all 0.5s;
+
+	border: 1px 0 1px 1px 1px solid black;
+	-webkit-box-shadow: 7px 7px 32px -5px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 7px 7px 32px -5px rgba(0, 0, 0, 1);
+	box-shadow: 7px 7px 32px -5px rgba(0, 0, 0, 1);
+}
+
+#obrazek {
+	grid-row: 2/3;
+	width: 61vw;
+	height: 60vh;
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	/* Perspektywa 3D */
+	perspective: 8000px;
+	transform-style: preserve-3d;
+}
+
+#obrazek img {
+	z-index: 1;
+	width: 61vw;
+	height: 60vh;
+	transition: all 11s ease-in-out;
+	/* Annimacja opacity obrazka */
+	-webkit-animation: obra 16s ease-out infinite;
+	-moz-animation: obra 16s ease-out infinite;
+	animation: obra 11s ease-out infinite;
+}
+
+#logo {
+	grid-row: 3/4;
+	width: 40vw;
+	height: 15vh;
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 2;
+	/* Perspektywa 3D */
+	perspective: 800px;
+	transform-style: preserve-3d;
+}
+
+#logo img {
+	width: 85%;
+	margin-left: 0.8rem;
+	transition: all 11s ease-in-out;
+
+	-webkit-animation: logo 8s ease-out infinite;
+	-moz-animation: logo 8s ease-out infinite;
+	animation: logo 11s ease-out infinite;
+}
+
+
+.tlo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(tla/tlo12.png);
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+	margin-left: auto;
+	margin-right: auto;
+	perspective: 800px;
+	overflow-y: hidden;
+	/* tutaj animaccja tła */
+
+	transition: all 12s ease-in-out;
+
+	-webkit-animation: tlo 16s ease-out infinite;
+	-moz-animation: tlo 16s ease-out infinite;
+	animation: tlo 12s ease-out infinite;
+
+}
+
+/* ================Nawigacjaq ==========*/
+#okno {
+	float: left;
+	width: 2rem;
+	margin-left: 0.6rem;
+	margin-top: 0.2rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+#okno .fa {
+	font-size: 30px;
+}
+
+#okno:hover .fa {
+	font-size: 31px;
+	color: rgba(126, 112, 150, 0.76);
+	margin-top: -0.1rem;
+}
+
+#napis {
+	float: right;
+	margin-right: 2rem;
+}
+
+#napis h3 {
+	font-family: 'Merienda', cursive;
+	text-align: justify;
+	font-weight: 300;
+}
+
+#napis h6 {
+	margin-left: 4rem;
+	text-align: right;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+/* niebieski gradient linear-gradient(to bottom,rgb(28, 83, 111), rgba(80, 152, 196, 0.91) */
+#lista {
+	position: fixed;
+	z-index: 2;
+	top: 7.5vh;
+	right: 0.7rem;
+	width: 65vw;
+	color: black;
+	background: linear-gradient(to top right, rgba(83, 14, 126, 0.91), rgba(74, 42, 180, 0.87), rgba(73, 104, 211, 0.85));
+	font-size: 16px;
+	border-radius: 0rem 0 1.2rem 1.2rem;
+	border: 1px solid black;
+	border: 1px 1px 0 1px 1px solid black;
+	-webkit-box-shadow: 7px 7px 32px -5px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 7px 7px 32px -5px rgba(0, 0, 0, 1);
+	box-shadow: 7px 7px 32px -5px rgba(0, 0, 0, 1);
+}
+
+
+#lista .fa {
+	font-size: 16px;
+}
+
+#lista .fab {
+	font-size: 16px;
+}
+
+ul a {
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+ul {
+	text-decoration: none;
+	text-align: justify;
+	list-style: none;
+	font-weight: 400;
+	padding: 0.2rem;
+}
+
+ul > li {
+	width: 120px;
+	height: 24px;
+	margin-left: 0.7rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+ul > li:first-child:hover {
+	width: 140px;
+	height: 24px;
+	margin-left: 0.7rem;
+}
+
+ul > li:hover {
+	font-size: 18px;
+	text-align: center;
+	padding: -2px;
+	border-radius: 0.2rem 0.8rem 0.8rem 0.2rem;
+	border: 1px solid rgba(72, 18, 72, 0.9);
+
+	-webkit-box-shadow: 10px 8px 30px -4px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 10px 8px 30px -4px rgba(0, 0, 0, 1);
+	box-shadow: 10px 8px 30px -4px rgba(0, 0, 0, 1);
+}
+
+ul > li:hover .fa,
+.fab {
+	font-size: 20px;
+	text-align: justify;
+
+	-webkit-box-shadow: 10px 8px 30px -4px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 10px 8px 30px -4px rgba(0, 0, 0, 1);
+	box-shadow: 10px 8px 30px -4px rgba(0, 0, 0, 1);
+}
+
+ul a:hover {
+	color: snow;
+}
+
+/* ==================== Do przeskakiwania strony */
+
+#idz {
+	position: relative;
+	width: 50px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 12vh;
+	right: 14vw;
+	text-align: center;
+	text-shadow: 0 -20px 1px snow, 0 -40px 2px snow;
+	overflow: hidden;
+	border: 1px solid black;
+
+	-webkit-animation: prze 2s infinite linear;
+	-moz-animation: prze 2s infinite linear;
+	animation: prze 2s infinite linear;
+
+	-webkit-box-shadow: inset 8px 1px 21px 1px rgb(255, 255, 255);
+	-moz-box-shadow: inset 8px 1px 21px 1px rgb(255, 255, 255);
+	box-shadow: inset 8px 1px 21px 1px rgb(255, 255, 255);
+
+	perspective: 50px;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	z-index: 10;
+}
+
+#idz .fa {
+	font-size: 45px;
+	color: snow;
+	-webkit-animation: strzal 2s infinite linear;
+	-moz-animation: strzal 2s infinite linear;
+	animation: strzal 2s infinite linear;
+}
+
+#idz .fa:hover {
+	color: snow;
+}
+
+@media all and (max-width: 321px) {
+	#napis {
+		margin-right: 0.4rem;
+	}
+
+	#napis hgroup h3 {
+		font-size: 14px;
+	}
+
+	#lista {
+		top: 8.8vh;
+		right: 0.7rem;
+		width: 60vw;
+	}
+
+	#obrazek {
+		width: 125px;
+		height: 225px;
+		top: 8rem;
+	}
+
+	#obrazek img {
+		z-index: 1;
+		width: 125px;
+		height: 225px;
+	}
+
+	#logo {
+		position: relative;
+		top: 2rem;
+	}
+}
+
+/* ================Responsywnosc dla < 410 px ===== */
+@media all and (min-width: 322px) and (max-width: 410px) {
+
+	#napis {
+		float: right;
+		margin-right: 0.2rem;
+	}
+
+	#napis hgroup h3 {
+		font-family: 'Merienda', cursive;
+		text-align: center;
+		font-weight: 300;
+		font-size: 14px;
+	}
+
+	#napis hgroup h6 {
+		margin-left: 2rem;
+		text-align: right;
+		font-family: 'Lato', sans-serif;
+		font-weight: 600;
+	}
+
+	#lista {
+		top: 8.2vh;
+		right: 0.7rem;
+		width: 60vw;
+	}
+
+	#obrazek {
+		width: 150px;
+		height: 250px;
+		top: 4rem;
+	}
+
+	#obrazek img {
+		z-index: 1;
+		width: 150px;
+		height: 250px;
+	}
+
+	#logo {
+		position: relative;
+		top: 2rem;
+	}
+}
+
+/* ================Responsywnosc dla > 411 px ===== */
+@media all and (min-width: 411px) and (max-width: 589px) {
+
+	#napis {
+		margin-right: 0.8rem;
+	}
+
+	#napis hgroup h3 {
+		font-size: 15px;
+	}
+
+
+	#lista {
+		top: 7vh;
+		right: 0.2rem;
+		width: 50vw;
+	}
+
+	#obrazek {
+		width: 150px;
+		height: 250px;
+		top: 8rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#obrazek img {
+		z-index: 1;
+		width: 150px;
+		height: 250px;
+	}
+
+	#logo {
+		margin-top: 10.5rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#logo img {
+		width: 36vw;
+		height: 14vh;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media all and (min-width: 590px) and (max-width: 798px) {
+
+	#menu {
+		width: 70%;
+		height: 2.4rem;
+	}
+
+	#lista {
+		top: 6.4vh;
+		right: 0.3rem;
+		width: 45vw;
+	}
+
+	#logo {
+		width: 25vw;
+		margin-top: 12rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#logo img {
+		width: 25vw;
+		height: 12vh;
+	}
+}
+
+
+@media all and (min-width: 800px) and (max-width: 1199px) {
+
+	#menu {
+		width: 50%;
+		height: 2.4rem;
+	}
+
+	#lista {
+		top: 6.4vh;
+		right: 1rem;
+		width: 25vw;
+	}
+
+	#obrazek {
+		width: 200px;
+		height: 300px;
+		top: 8rem;
+	}
+
+	#obrazek img {
+		z-index: 1;
+		width: 200px;
+		height: 300px;
+	}
+
+	#logo {
+		width: 16vw;
+		height: 12vh;
+		margin-top: 12rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#logo img {
+		width: 16vw;
+		height: 12vh;
+	}
+}
+
+@media all and (min-width: 1200px) and (max-width: 1599px) {
+
+	#menu {
+		width: 35%;
+		height: 2.6rem;
+	}
+
+	#okno {
+		width: 2.2rem;
+		margin-top: 0.4rem;
+	}
+
+	#lista {
+		width: 20vw;
+		top: 3.5rem;
+	}
+
+	#obrazek {
+		display: none;
+	}
+
+	#logo {
+		width: 12vw;
+		height: 12vh;
+		margin-top: 32rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#logo img {
+		width: 12vw;
+		height: 12vh;
+	}
+}
+
+
+@media all and (min-width: 1600px) {
+
+	#menu {
+		width: 25%;
+		height: 3rem;
+	}
+
+	#okno {
+		width: 2.2rem;
+		margin-top: 0.6rem;
+	}
+
+	#napis {
+		float: right;
+		margin-right: 2rem;
+		margin-top: 0.2rem;
+	}
+
+	#napis h3 {
+		font-weight: 600;
+	}
+
+	#napis h6 {
+		font-weight: 800;
+	}
+
+
+	#lista {
+		width: 15vw;
+		top: 3.8rem;
+	}
+
+	#obrazek {
+		display: none;
+	}
+
+	#logo {
+		width: 10vw;
+		height: 10vh;
+		margin-top: 42rem;
+	}
+
+	#logo img {
+		width: 10vw;
+		height: 10vh;
+	}
+}

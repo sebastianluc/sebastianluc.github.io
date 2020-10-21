@@ -1,0 +1,325 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Głowne dane całych bloków */
+html {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 10vh 5vh auto 10vh;
+	grid-template-areas: "logo""menu""tresc""stopka";
+	grid-row-gap: 0.6rem;
+	background: linear-gradient(45deg, rgba(124, 90, 219, 0.78), rgb(36, 26, 64), rgb(102, 97, 116));
+	background-size: 150% 140%;
+	z-index: 0;
+}
+
+header {
+	grid-column: 1/4;
+	grid-row: 1/3;
+	position: relative;
+	z-index: 1;
+	width: 98vw;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 2;
+}
+
+main {
+	grid-column: 1/4;
+	grid-row: 3/4;
+	position: relative;
+	width: 98vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	min-height: 70vh;
+	background-color: rgb(255, 251, 204);
+	text-align: justify;
+	z-index: 0;
+	border-radius: 0.8rem 0.8rem 1rem 1rem;
+	font-family: Merienda;
+}
+
+footer {
+	color: snow;
+	grid-column: 3/4;
+	grid-row: 4/5;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#toScrrol {
+	top: 0;
+	left: 0;
+}
+
+#logo {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	position: relative;
+	width: 18vw;
+	height: 10vh;
+	top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	z-index: 2;
+	perspective: 50px;
+}
+
+#logo img {
+	width: 22vw;
+	height: 10vh;
+}
+
+main h1 {
+	position: relative;
+	top: 32vh;
+	text-align: center;
+	font-size: 50px;
+}
+
+footer hgroup {
+	position: relative;
+	right: 1rem;
+}
+
+hgroup h2 {
+	font-family: Merienda;
+}
+
+hgroup h4 {
+	margin-left: 3.8rem;
+}
+
+@media all and (min-width: 290px) and (max-width: 400px) {
+
+	#logo {
+		width: 25vw;
+		height: 12vh;
+		top: 1rem;
+	}
+
+	#logo img {
+		width: 25vw;
+		height: 12vh;
+	}
+
+	main {
+		min-height: 60vh;
+		max-width: 90vw;
+	}
+
+	main h1 {
+		top: 32vh;
+		font-size: 25px;
+	}
+
+	hgroup h2 {
+		font-size: 16px !important;
+	}
+
+	hgroup h4 {
+		font-size: 12px !important;
+		margin-left: 1rem;
+	}
+}
+
+
+@media all and (min-width: 401px) and (max-width: 700px) {
+
+	#logo {
+		width: 25vw;
+		height: 15vh;
+		top: 0.7rem;
+	}
+
+	#logo img {
+		width: 25vw;
+		height: 15vh;
+	}
+
+	main {
+		min-height: 60vh;
+		max-width: 80vw;
+	}
+
+	main h1 {
+		top: 25vh;
+		font-size: 25px;
+	}
+
+	hgroup h2 {
+		font-size: 16px !important;
+	}
+
+	hgroup h4 {
+		font-size: 12px !important;
+		margin-left: 1rem;
+	}
+}
+
+
+@media all and (min-width: 590px) and (max-width: 920px) {
+
+	#logo {
+		width: 21vw;
+		height: 15vh;
+		top: 0rem;
+	}
+
+	#logo img {
+		width: 21vw;
+		height: 15vh;
+	}
+
+	main {
+		margin-top: 1rem;
+		min-height: 50vh;
+		max-width: 70vw;
+	}
+
+	main h1 {
+		top: 20vh;
+		font-size: 25px;
+	}
+
+	footer hgroup {
+		right: 3rem;
+	}
+
+	hgroup h2 {
+		font-size: 16px !important;
+	}
+
+	hgroup h4 {
+		font-size: 12px !important;
+		margin-left: 1rem;
+	}
+}
+
+@media all and (min-width: 921px) and (max-width: 1200px) {
+
+	#logo {
+		width: 18vw;
+		height: 14vh;
+		top: 0rem;
+	}
+
+	#logo img {
+		width: 18vw;
+		height: 14vh;
+	}
+
+	main {
+		margin-top: 1rem;
+		min-height: 50vh;
+		max-width: 65vw;
+	}
+
+	main h1 {
+		top: 20vh;
+		font-size: 25px;
+	}
+
+	footer hgroup {
+		right: 10rem;
+	}
+
+	hgroup h2 {
+		font-size: 16px !important;
+	}
+
+	hgroup h4 {
+		font-size: 12px !important;
+		margin-left: 1rem;
+	}
+}
+
+@media all and (min-width: 1201px) and (max-width: 1600px) {
+
+	#logo {
+		width: 18vw;
+		height: 13vh;
+		top: 0rem;
+	}
+
+	#logo img {
+		width: 18vw;
+		height: 13vh;
+	}
+
+	main {
+		margin-top: 1rem;
+		min-height: 50vh;
+		max-width: 60vw;
+	}
+
+	main h1 {
+		top: 18vh;
+		font-size: 24px;
+	}
+
+	footer hgroup {
+		right: 15rem;
+	}
+
+	hgroup h2 {
+		font-size: 16px !important;
+	}
+
+	hgroup h4 {
+		font-size: 12px !important;
+		margin-left: 1rem;
+	}
+}
+
+@media all and (min-width: 1601px) {
+
+	#logo {
+		width: 13vw;
+		height: 12vh;
+		top: 2rem;
+	}
+
+	#logo img {
+		width: 13vw;
+		height: 12vh;
+	}
+
+	main {
+		margin-top: 2rem;
+		min-height: 50vh;
+		max-width: 50vw;
+	}
+
+	main h1 {
+		top: 18vh;
+		font-size: 36px;
+	}
+
+	footer hgroup {
+		right: 25vw;
+	}
+
+	hgroup h2 {
+		font-size: 18px !important;
+	}
+
+	hgroup h4 {
+		font-size: 14px !important;
+		margin-left: 2rem;
+	}
+}

@@ -1,0 +1,354 @@
+#projekty {
+	grid-column: 1/3;
+	grid-row: 2/3;
+	width: 98vw;
+	height: 85vh;
+	background: radial-gradient(rgba(0, 59, 255, 0.76), rgba(119, 96, 242, 0.58), rgba(36, 240, 107, 0.72), rgba(156, 62, 168, 0.85));
+	background-size: 350% 150%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	border-radius: 1rem 1rem 1rem 1rem;
+	position: relative;
+	z-index: 5;
+	min-height: 100vh;
+
+	-webkit-box-shadow: -2px -7px 29px 2px rgba(102, 34, 97, 0.89);
+	box-shadow: -2px -7px 29px 2px rgba(102, 34, 97, 0.9);
+}
+
+#projekty hgroup {
+	margin-top: 1.5rem;
+	margin-left: 0.5rem;
+}
+
+#projekty h3 {
+	border-bottom: 1px solid black;
+}
+
+#projekty hgroup a {
+	color: rgba(156, 62, 168, 0.85);
+}
+
+#projekty h2 {
+	margin-top: 3rem;
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	font-size: 18px;
+}
+
+#przejscie {
+	position: absolute;
+	bottom: 4rem;
+	right: 4rem;
+}
+
+#przejscie a {
+	text-decoration: none;
+	color: rgba(50, 190, 179, 0.76);
+}
+
+#przejscie a:hover {
+	color: rgba(17, 240, 223, 0.76);
+}
+
+#szcze {
+	width: 8rem;
+	height: 4rem;
+	background-color: rgba(52, 10, 109, 0.83);
+	border: none;
+	border-radius: 4rem 4rem 4rem 4rem;
+	text-align: center;
+	padding: 1.2rem;
+	z-index: 10;
+	font-size: 15px;
+	font-family: Merienda;
+	-webkit-transition: all 0.5s ease-in-ouy;
+	transition: all 0.5s ease-in-ouy;
+	-webkit-box-shadow: 4px 6px 16px -2px rgba(0, 0, 0, 0.75);
+	box-shadow: 4px 6px 16px -2px rgba(0, 0, 0, 0.75);
+}
+
+#szcze:hover {
+	-webkit-transform: scale(1.001);
+	        transform: scale(1.001);
+	background-color: rgba(65, 28, 116, 0.9);
+	z-index: 10;
+	font-size: 16px;
+
+	-webkit-box-shadow: 4px 6px 32px 1px rgba(0, 0, 0, 0.75);
+	box-shadow: 4px 6px 32px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* ============= Responsywnosc do 410 + 410 -> 500 == */
+
+@media all and (max-width: 350px) {
+
+	#projekty #curentTo {
+		margin-top: 0.8rem;
+		width: 90vw;
+		font-size: 10px;
+	}
+
+	#projekty #finTo {
+		margin-top: 0.8rem;
+		width: 90vw;
+		font-size: 10px;
+	}
+
+	#przejscie {
+		position: absolute;
+		bottom: 3rem;
+		right: 2rem;
+	}
+
+	#szcze {
+		width: 6rem;
+		height: 2rem;
+		padding: 0.6rem;
+		font-size: 9px;
+	}
+
+	#szcze:hover {
+		font-size: 10px;
+	}
+}
+
+@media all and (min-width: 351px) and (max-width: 410px) {
+
+	#projekty #curentTo {
+		margin-top: 1.6rem;
+		width: 86vw;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		font-size: 14px;
+	}
+
+	#projekty #finTo {
+		margin-top: 1.6rem;
+		width: 86vw;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		font-size: 14px;
+	}
+
+	#przejscie {
+		position: absolute;
+		bottom: 3.8rem;
+		right: 2rem;
+	}
+
+	#szcze {
+		width: 6rem;
+		height: 2.5rem;
+		padding: 0.8rem;
+		font-size: 10px;
+	}
+
+	#szcze:hover {
+		font-size: 11px;
+	}
+
+}
+
+@media all and (min-width: 411px) and (max-width: 479px) {
+	#projekty #curentTo {
+		margin-top: 1.6rem;
+		width: 86vw;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		font-size: 18px;
+	}
+
+	#projekty #finTo {
+		margin-top: 1.6rem;
+		width: 86vw;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		font-size: 18px;
+	}
+
+	#przejscie {
+		position: absolute;
+		bottom: 3rem;
+		right: 2.2rem;
+	}
+
+	#szcze {
+		width: 6rem;
+		height: 2.5rem;
+		padding: 0.8rem;
+		font-size: 12px;
+	}
+
+	#szcze:hover {
+		font-size: 13px;
+	}
+}
+
+@media all and (min-width: 480px) and (max-width: 700px) {
+	#przejscie {
+		position: absolute;
+		bottom: 4rem;
+		right: 3rem;
+	}
+
+	#szcze {
+		width: 8rem;
+		height: 3.5rem;
+		padding: 1rem;
+		font-size: 16px;
+	}
+
+	#szcze:hover {
+		font-size: 17px;
+	}
+}
+
+@media all and (min-width: 800px) and (max-width: 1199px) {
+
+	#projekty {
+		width: 60vw;
+		height: 75vh;
+		min-height: 70vh;
+
+		background: linear-gradient(-55deg, rgba(80, 22, 93, 0.92), rgba(144, 50, 147, 0.61), rgba(46, 80, 201, 0.86), rgba(58, 164, 229, 0.76));
+		background-size: 250% 150%;
+	}
+
+	#projekty hgroup {
+		margin-top: 1.5rem;
+		margin-left: 0.5rem;
+	}
+
+	#projekty #curentTo {
+		margin-top: 2.2rem;
+		width: 55vw;
+		font-size: 12px;
+	}
+
+	#projekty #finTo {
+		margin-top: 2.2rem;
+		width: 55vw;
+		font-size: 12px;
+	}
+
+	#przejscie {
+		position: absolute;
+		bottom: 4rem;
+		right: 3.2rem;
+	}
+
+	#szcze {
+		width: 8rem;
+		height: 3.5rem;
+		padding: 1rem;
+		font-size: 18px;
+	}
+
+	#szcze:hover {
+		font-size: 19px;
+	}
+}
+
+@media all and (min-width: 1200px) and (max-width: 1599px) {
+
+	#projekty {
+		grid-column: 2/3;
+		grid-row: 2/3;
+		float: right;
+		margin-right: 2rem;
+		width: 45vw;
+		height: 75vh;
+		min-height: 70vh;
+	}
+
+	#projekty hgroup {
+		padding: 1rem;
+		margin-top: 1.5rem;
+		margin-left: 0.5rem;
+	}
+
+	#projekty #curentTo {
+		margin-top: 2.2rem;
+		width: 40vw;
+		font-size: 16px;
+	}
+
+	#projekty #finTo {
+		margin-top: 2.2rem;
+		width: 40vw;
+		font-size: 16px;
+	}
+
+	#przejscie {
+		position: absolute;
+		bottom: 5rem;
+		right: 4.2rem;
+	}
+
+	#szcze {
+		width: 10rem;
+		height: 4rem;
+		padding: 1.2rem;
+		font-size: 20px;
+	}
+
+	#szcze:hover {
+		font-size: 21px;
+	}
+}
+
+@media all and (min-width: 1600px) {
+
+	#projekty {
+		grid-column: 2/3;
+		grid-row: 2/3;
+		float: right;
+		margin-right: 2rem;
+		width: 45vw;
+		height: 75vh;
+		min-height: 70vh;
+	}
+
+	#projekty hgroup {
+		padding: 1rem;
+		margin-top: 1.5rem;
+		margin-left: 0.5rem;
+	}
+
+	#projekty #curentTo {
+		margin-top: 2.2rem;
+		width: 40vw;
+		font-size: 18px;
+	}
+
+	#projekty #finTo {
+		margin-top: 2.2rem;
+		width: 40vw;
+		font-size: 18px;
+	}
+
+	#przejscie {
+		position: absolute;
+		bottom: 5rem;
+		right: 4.2rem;
+	}
+
+	#szcze {
+		width: 11rem;
+		height: 4rem;
+		padding: 1.2rem;
+		font-size: 20px;
+	}
+
+	#szcze:hover {
+		font-size: 21px;
+	}
+}
